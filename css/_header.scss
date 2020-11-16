@@ -1,0 +1,39 @@
+header {
+    height: 100px;
+    background-color: #000000;
+}
+
+.container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    width: 899px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+
+    &::after {
+        content: '';
+        border-bottom: 3px solid $accent-color;
+        position: absolute;
+        bottom: -40px;
+        left: -10%;
+        width: 0;
+        transition: width .3s;
+    }
+
+    &:hover::after {
+          width: calc(120% - 0px);
+    }
+}

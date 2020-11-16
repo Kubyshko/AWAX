@@ -1,0 +1,213 @@
+@import 'common';
+@import 'header';
+
+.slider {
+    height: 850px;
+    background-image: url(../img/Bg_img_01.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-us {
+    padding: 63px 0;
+
+    .text-and-video {
+        justify-content: space-between;
+        gap: 30px;
+
+        .about-text {
+            max-width: 635px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.79;
+        }
+
+        button {
+            margin: 35px auto;
+        }
+
+        .about-video {
+            cursor: pointer;
+            width: 445px;
+            height: 275px;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 1.0);
+            background-image: url(../img/video.png);
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            transition: 0.3s linear;
+
+            &:hover {
+                transition: 0.3s linear;
+                box-shadow: 0 0 20px rgba($color: #000000, $alpha: 1.0);
+            }
+
+            .about-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 83px;
+                height: 83px;
+                border-radius: 50%;
+                border: solid 2px $second-color;
+                color: $second-color;
+                font-size: 30px;
+                position: relative;
+                transition: 0.3s linear;
+
+                .fas {
+                    position: absolute;
+                    right: 30%;
+                }
+
+                &:hover {
+                    transition: 0.3s linear;
+                    transform: scale(1.1);
+                }
+
+
+            }
+
+            .video-text {
+                justify-content: space-between;
+                font-size: 30px;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $second-color;
+
+            }
+        }
+    }
+}
+
+.services {
+    padding: 63px 0;
+    background-color: #000000;
+    
+    .vertical-line {
+        width: 2px;
+        height: auto;
+        background-color: #bebebe;
+    }
+
+    .our-features {
+        justify-content: space-between;
+        gap: 35px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h2 {
+        color: $second-color;
+    }
+    
+    .feature-icon {
+        font-size: 60px;
+        color: $accent-color;
+
+        &:hover {
+            transition: 0.3s linear;
+            transform: scale(1.05);
+        }
+    }
+
+    .feature-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $second-color;
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 1.75;
+    }
+
+    .feature-text {
+        font-size: 12px;
+        color: #7e7e7e;
+        line-height: 1.75;
+    }
+}
+
+.projects {
+    padding: 63px 0;
+    
+
+    .project-vertical-line {
+        margin-top: 2px;
+        align-content: center;
+        width: 1px;
+        height: 52px;
+        background-color: #cfcfcf;
+    }
+
+    .radio-filter {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 300;
+        color: #000000;
+        text-align: center;
+        margin: 0 20px;
+        line-height: 56px;
+        cursor: pointer;
+        position: relative;
+
+       /* &::after {
+            content: '';
+            border-bottom: 3px solid $accent-color;
+            position: absolute;
+            bottom: 0px;
+            left: -10%;
+            width: 0;
+            transition: width .3s;
+        }
+    
+        &:hover::after {
+              width: calc(120% - 0px);
+        } */
+
+        
+        input {
+            display: none;
+
+            &:checked + span {
+            //content: '';
+                border-bottom: 3px solid $accent-color;
+                //position: absolute;
+                bottom: 0px;
+                left: -10%;
+                width: 0;
+                transition: width .3s;
+                width: calc(120% - 0px);
+            }
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+       
+    }
+
+
+    .filter-buttons {
+        margin: 0 auto;
+        justify-content: center;
+        width: 710px;
+        height: 58px;
+        border-radius: 25.2px;
+        border: solid 1px #cfcfcf;
+        background-color: #ededed;
+    }
+
+
+}
