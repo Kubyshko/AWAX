@@ -160,40 +160,34 @@
         cursor: pointer;
         position: relative;
 
-       /* &::after {
+        &::after {
             content: '';
             border-bottom: 3px solid $accent-color;
             position: absolute;
             bottom: 0px;
-            left: -10%;
+            left: 0;
             width: 0;
             transition: width .3s;
         }
     
         &:hover::after {
-              width: calc(120% - 0px);
-        } */
+              width: calc(100% - 0px);
+        } 
 
         
         input {
             display: none;
-
+            
             &:checked + span {
-            //content: '';
                 border-bottom: 3px solid $accent-color;
-                //position: absolute;
-                bottom: 0px;
-                left: -10%;
-                width: 0;
-                transition: width .3s;
-                width: calc(120% - 0px);
+                height: 56px;
+
             }
         }
 
         span {
             display: block;
-            width: 100%;
-            height: 100%;
+            border-bottom: 0px solid $accent-color;
         }
        
     }
@@ -207,7 +201,58 @@
         border-radius: 25.2px;
         border: solid 1px #cfcfcf;
         background-color: #ededed;
+        margin-bottom: 38px;
     }
 
+.cases-container {
+    grid-template-columns: repeat(4, 255px);
+    grid-auto-rows: 165px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.case-item {
+    text-decoration: none;
+    background-color: #7e7e7e;
+    position: relative;
+
+    &:hover .case-inner {
+        opacity: 0.8;
+    }
+
+    .case-inner {
+        opacity: 0;
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        left: 1px;
+        right: 1px;
+        background-color: #000000;
+        text-align: center;
+        padding: 0 15%;
+        transition: all .8 ease-in-out;
+    }
+
+    .inner-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $second-color;
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 1.75;
+    }
+
+    .inner-text {
+        font-weight: 300;
+        font-size: 12px;
+        color: $second-color;
+        line-height: 1.75;
+    }
+    
+}
+
+button {
+    margin: 30px;
+}
 
 }
