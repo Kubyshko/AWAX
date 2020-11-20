@@ -335,14 +335,13 @@
         }
     }
 
-    .radio-buttons {       
+    .radio-buttons-team {       
         justify-content: center;
         gap: 11px;
         margin-top: 45px;
 
-        input {
-            display: none;
-
+        .radio-team {
+            
             &:checked + span {
                 background-color: $accent-color;
                 border-color: $accent-color;
@@ -413,13 +412,12 @@
         text-align: center;
     }
 
-    .radio-buttons {       
+    .radio-buttons-clients {       
         justify-content: center;
         gap: 11px;
         margin: 50px auto;
 
-        input {
-            display: none;
+        .radio-clients {
 
             &:checked + span {
                 background-color: $accent-color;
@@ -454,4 +452,76 @@
 
     }
 
+}
+
+.our-price {
+
+    h2 {
+        margin-top: 58px;
+    }
+
+    .price-table {
+        justify-content: space-around;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .price-block {
+        width: 255px;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+
+        .price-name {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        .price-value {
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 15px;
+
+        }
+
+        .price-in-month {
+            text-transform: uppercase;
+            font-size: 10px;
+            margin-top: 4px;
+            color: #aeaeae;
+        }
+
+        ul {
+            margin-top: 23px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 10px;
+            font-weight: 600;
+            color: #7E7E7E;
+            position: relative;
+            padding-bottom: 14px;
+        }
+
+        li:not(:last-child)::after {
+            position: absolute;
+            content: '';
+            bottom: 6px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 8px;
+            height: 1px;
+            background-color: #7E7E7E;
+          }
+
+          .btn-options {
+              margin-top: 20px;
+              margin-bottom: 30px;
+              width: 129px;
+          }
+    }
 }

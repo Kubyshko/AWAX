@@ -11,6 +11,10 @@ body {
   background-color: #f7f7f7;
 }
 
+input {
+  display: none;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -480,7 +484,7 @@ nav {
   color: white;
 }
 
-.our-team .radio-buttons {
+.our-team .radio-buttons-team {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -488,16 +492,12 @@ nav {
   margin-top: 45px;
 }
 
-.our-team .radio-buttons input {
-  display: none;
-}
-
-.our-team .radio-buttons input:checked + span {
+.our-team .radio-buttons-team .radio-team:checked + span {
   background-color: #b88b58;
   border-color: #b88b58;
 }
 
-.our-team .radio-buttons span {
+.our-team .radio-buttons-team span {
   cursor: pointer;
   display: block;
   width: 14px;
@@ -553,7 +553,7 @@ nav {
   text-align: center;
 }
 
-.happy-clients .radio-buttons {
+.happy-clients .radio-buttons-clients {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -561,16 +561,12 @@ nav {
   margin: 50px auto;
 }
 
-.happy-clients .radio-buttons input {
-  display: none;
-}
-
-.happy-clients .radio-buttons input:checked + span {
+.happy-clients .radio-buttons-clients .radio-clients:checked + span {
   background-color: #b88b58;
   border-color: #b88b58;
 }
 
-.happy-clients .radio-buttons span {
+.happy-clients .radio-buttons-clients span {
   cursor: pointer;
   display: block;
   width: 14px;
@@ -595,5 +591,74 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.our-price h2 {
+  margin-top: 58px;
+}
+
+.our-price .price-table {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.our-price .price-block {
+  width: 255px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.our-price .price-block .price-name {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.our-price .price-block .price-value {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.our-price .price-block .price-in-month {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 4px;
+  color: #aeaeae;
+}
+
+.our-price .price-block ul {
+  margin-top: 23px;
+}
+
+.our-price .price-block li {
+  list-style-type: none;
+  font-size: 10px;
+  font-weight: 600;
+  color: #7E7E7E;
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.our-price .price-block li:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  bottom: 6px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 8px;
+  height: 1px;
+  background-color: #7E7E7E;
+}
+
+.our-price .price-block .btn-options {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 129px;
 }
 /*# sourceMappingURL=main-page.css.map */
