@@ -138,6 +138,12 @@
 
 .projects {
     padding: 63px 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
 
     .project-vertical-line {
@@ -252,7 +258,106 @@
 }
 
 button {
-    margin: 30px;
+    margin-top: 30px;
 }
+
+}
+
+.our-team {
+    background-image: url(../img/Bg_image.png);
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    padding: 63px 0;
+    
+
+    h2 {
+        color: $second-color;
+    }
+
+    .team {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .teammate {
+        width: 350px;
+        height: 432px;
+        border-radius: 5px;
+        background-color: white;
+
+        .image-teammate {
+            margin: 45px auto;
+            width: 183px;
+            height: 183px;
+            border-radius: 50%;
+        }
+
+        .name-teammatem {
+            font-size: 21px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.71;
+            text-transform: uppercase;
+        }
+
+        .position-teammate {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.71;
+        }
+
+        .subscrib-teammate {
+            margin-top: 38px;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .subscrib {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color:  #bebebe;
+            text-align: center;
+            line-height: 33px;
+
+            &:hover {
+                background-color: $accent-color;
+            }
+
+            .fab {
+                text-decoration: none;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    .radio-buttons {       
+        justify-content: center;
+        gap: 11px;
+        margin-top: 50px;
+        
+
+        input {
+            display: none;
+
+            &:checked + span {
+                background-color: $accent-color;
+                border-color: $accent-color;
+            }
+        }
+
+        span {
+            cursor: pointer;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: solid 2px $accent-color;
+        }
+
+    }
 
 }

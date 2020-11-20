@@ -273,6 +273,19 @@ nav {
   padding: 63px 0;
 }
 
+.projects .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .projects .project-vertical-line {
   margin-top: 2px;
   -ms-flex-line-pack: center;
@@ -388,6 +401,107 @@ nav {
 }
 
 .projects button {
-  margin: 30px;
+  margin-top: 30px;
+}
+
+.our-team {
+  background-image: url(../img/Bg_image.png);
+  height: 700px;
+  background-size: cover;
+  background-position: center center;
+  padding: 63px 0;
+}
+
+.our-team h2 {
+  color: #ffffff;
+}
+
+.our-team .team {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.our-team .teammate {
+  width: 350px;
+  height: 432px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.our-team .teammate .image-teammate {
+  margin: 45px auto;
+  width: 183px;
+  height: 183px;
+  border-radius: 50%;
+}
+
+.our-team .teammate .name-teammatem {
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.71;
+  text-transform: uppercase;
+}
+
+.our-team .teammate .position-teammate {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.71;
+}
+
+.our-team .teammate .subscrib-teammate {
+  margin-top: 38px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
+}
+
+.our-team .teammate .subscrib {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #bebebe;
+  text-align: center;
+  line-height: 33px;
+}
+
+.our-team .teammate .subscrib:hover {
+  background-color: #b88b58;
+}
+
+.our-team .teammate .subscrib .fab {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.our-team .radio-buttons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 11px;
+  margin-top: 50px;
+}
+
+.our-team .radio-buttons input {
+  display: none;
+}
+
+.our-team .radio-buttons input:checked + span {
+  background-color: #b88b58;
+  border-color: #b88b58;
+}
+
+.our-team .radio-buttons span {
+  cursor: pointer;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 2px #b88b58;
 }
 /*# sourceMappingURL=main-page.css.map */
