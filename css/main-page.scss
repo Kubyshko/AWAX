@@ -665,3 +665,79 @@
         }
     }
 }
+
+.tell-about-us {
+
+    .tell-more {
+        align-items: center;
+
+        .fa-share-alt {
+            font-size: 22px;
+            color: #bebebe;
+        }
+
+        span {
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #bebebe;
+        }
+    }
+
+    .container {
+        height: 76px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    .social {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 33px;
+        color: white;
+        margin-left: 35px;
+        transition: 0.3s linear;
+
+        &:hover {
+            transition: 0.3s linear;
+            background-color: #000000;
+            box-shadow: 0 0 5px black;
+        }
+
+    }
+
+    .twitter {
+        background-color: #34c5f0;
+    }
+
+    .linkedin-in {
+        background-color: #127cb4;
+
+    }
+
+    .facebook {
+        background-color: #336297;
+    }
+
+    .vk {
+        background-color: #336297;
+    }
+
+    .pinterest {
+        background-color: #b71c29;
+    }
+
+    span {
+        margin-left: 5px;
+        font-size: 10px;
+        color: #bebebe;
+        font-weight: 900;
+    }
+
+}

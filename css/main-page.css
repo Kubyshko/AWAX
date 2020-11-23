@@ -797,4 +797,83 @@ nav {
   color: #7e7e7e;
   line-height: 1.75;
 }
+
+.tell-about-us .tell-more {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tell-about-us .tell-more .fa-share-alt {
+  font-size: 22px;
+  color: #bebebe;
+}
+
+.tell-about-us .tell-more span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #bebebe;
+}
+
+.tell-about-us .container {
+  height: 76px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tell-about-us a {
+  text-decoration: none;
+}
+
+.tell-about-us .social {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 33px;
+  color: white;
+  margin-left: 35px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.tell-about-us .social:hover {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  background-color: #000000;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+}
+
+.tell-about-us .twitter {
+  background-color: #34c5f0;
+}
+
+.tell-about-us .linkedin-in {
+  background-color: #127cb4;
+}
+
+.tell-about-us .facebook {
+  background-color: #336297;
+}
+
+.tell-about-us .vk {
+  background-color: #336297;
+}
+
+.tell-about-us .pinterest {
+  background-color: #b71c29;
+}
+
+.tell-about-us span {
+  margin-left: 5px;
+  font-size: 10px;
+  color: #bebebe;
+  font-weight: 900;
+}
 /*# sourceMappingURL=main-page.css.map */
