@@ -1134,4 +1134,52 @@ footer .email-subscrib .input {
   -webkit-transition: .2s;
   transition: .2s;
 }
+
+footer .up {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #b88b58;
+  text-align: center;
+  font-size: 45px;
+  line-height: 65px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+footer .up:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+}
+
+footer .phone {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #b88b58;
+  text-align: center;
+  font-size: 25px;
+  line-height: 65px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+footer .phone:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+}
 /*# sourceMappingURL=main-page.css.map */
