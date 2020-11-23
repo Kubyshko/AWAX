@@ -525,3 +525,85 @@
           }
     }
 }
+
+.price-slider {
+
+    height: 755px;
+    background-color: white;
+
+    .container {
+        padding: 60px 0;
+    }
+
+    .price-slider-block {
+        border-bottom: 1px solid #bebebe;
+        align-items: center;
+
+        .price-slider-image {
+            max-width: 445px;
+        }
+
+        .price-slider-points {
+
+            .price-slider-item {
+                margin: 20px auto;
+            }
+
+            .price-slider-item-image {
+                font-size: 30px;
+                color: $accent-color;
+                margin-right: 30px;
+            }
+
+            .price-slider-text-name {
+                font-size: 21px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .price-slider-text-value {
+                font-size: 14px;
+                color: #5b5b5b;
+                line-height: 1.8;
+            }
+
+            li {
+                list-style-type: none;
+                font-size: 14px;
+                color: #5b5b5b;
+                line-height: 1.8;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .price-slider-radio-buttons {       
+        justify-content: center;
+        gap: 11px;
+        margin: 37px auto;
+
+        .price-slider-radio {
+
+            &:checked + span {
+                background-color: $accent-color;
+                border-color: $accent-color;
+            }
+        }
+
+        span {
+            cursor: pointer;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: solid 2px $accent-color;
+        }
+
+    }
+
+    .price-slider-btn {
+        justify-content: center;
+    }
+
+
+}
